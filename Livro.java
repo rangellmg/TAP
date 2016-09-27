@@ -7,7 +7,14 @@ public class Livro {
 	
 	private String titulo;
 	private String nome;
-	private String exemplar;
+	
+	private Exemplar[] getExemplares() {
+		return exemplares;
+	}
+	
+	private void setExemplares(Exemplar[] exemplares) {
+		this.exemplares = exemplares;
+	}
 	
 	public String getTitulo() {
 		return titulo;
@@ -24,15 +31,5 @@ public class Livro {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
-	public String getExemplar() {
-		return exemplar;
-	}
-
-	public void setExemplar(String exemplar) {
-		this.exemplar = exemplar;
-	}
-	
-	
 	
 }
