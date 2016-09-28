@@ -1,11 +1,15 @@
 package TAP.library;
 
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+
 public class Cadastro {
 
 	private int matricula;
 	private String nome;
 	private String exemplarLocado;
-	
+        
+        ArrayList cadastros = new ArrayList();
 	
 	public int getMatricula() {
 		return matricula;
@@ -30,6 +34,5 @@ public class Cadastro {
 	public void setExemplarLocado(String exemplarLocado) {
 		this.exemplarLocado = exemplarLocado;
 	}
-	
 	
 }
