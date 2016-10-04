@@ -1,6 +1,6 @@
 package TAP.library;
 
-public class Exemplar extends Livro {
+public class Exemplar {
 	
 	private int codigo;
 	private String localizacao;

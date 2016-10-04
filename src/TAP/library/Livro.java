@@ -8,12 +8,24 @@ public class Livro {
 	private String titulo;
 	private String nome;
 	
-	private Exemplar[] getExemplares() {
+	public Exemplar[] getExemplares() {
 		return exemplares;
 	}
 	
-	private void setExemplares(Exemplar[] exemplares) {
-		this.exemplares = exemplares;
+	public void adicionarExemplar(Exemplar exemplar) {
+		int contador = 0;
+		boolean addExemplar = true;
+		
+		while(addExemplar && contador < MAX_EXEMPLAR) {
+			if(exemplares[contador] == null) {
+				exemplares[contador] = exemplar;
+				addExemplar = false;
+			}
+			contador++;
+		}
+		if(contador == MAX_EXEMPLAR) {
+			System.out.println("Número máximo de exemplares atingido.");
+		}
 	}
 	
 	public String getTitulo() {
