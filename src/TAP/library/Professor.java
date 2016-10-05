@@ -2,7 +2,7 @@ package TAP.library;
 
 import javax.swing.JOptionPane;
 
-public class Professor extends Cadastro {
+public class Professor extends Usuario {
 
 	private String participaCurso;
 
@@ -14,11 +14,13 @@ public class Professor extends Cadastro {
 		this.participaCurso = participaCurso;
 	}
 	
-        public void CadastrarProfessor(Professor cadastrar){
-            cadastrar.setNome(JOptionPane.showInputDialog("Nome:"));
-            cadastrar.setMatricula(Integer.parseInt(JOptionPane.showInputDialog("Matricula:")));
-            cadastrar.setParticipaCurso(JOptionPane.showInputDialog("Curso que participa:"));
-            
-            cadastros.add(cadastrar);
-        }
+	public void CadastrarProfessor(Professor cadastrar) {
+		
+		cadastrar.setNome(JOptionPane.showInputDialog("Nome: "));
+		cadastrar.setMatricula(Integer.parseInt(JOptionPane.showInputDialog("Matrícula: ")));
+		cadastrar.setParticipaCurso(JOptionPane.showInputDialog("Cursos que participa: "));
+		cadastrar.setExemplarLocado(JOptionPane.showInputDialog("Exemplar locado: "));
+		
+		cadastros.add(cadastrar);
+	}
 }

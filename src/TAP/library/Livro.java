@@ -2,7 +2,7 @@ package TAP.library;
 
 public class Livro {
 	
-	private final int MAX_EXEMPLAR = 5;
+	private final int MAX_EXEMPLAR = 5; // TODO Arrumar não existe limite de exemplar e sim de locação
 	private Exemplar exemplares[] = new Exemplar[MAX_EXEMPLAR];
 	
 	private String titulo;

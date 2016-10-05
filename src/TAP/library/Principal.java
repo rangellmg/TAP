@@ -13,7 +13,7 @@ public class Principal {
 			int switchCase = Integer.parseInt(JOptionPane.showInputDialog("MENU\n\n1- Cadastrar Aluno"
 																		  + "\n2- Cadastrar Professor"
 																		  + "\n3- Cadastrar Livro"
-																		  + "\n4- Cadastrar Exemplar"//Verificar se está correto
+																		  + "\n4- Cadastrar Exemplar"
 																		  + "\n5- Consultar Livro ou Exemplar"
 																		  + "\n6- Consultar Professor ou Aluno"
 																		  + "\n7- Locação de livros"
